@@ -1,0 +1,24 @@
+{
+  "content_scripts": [
+    {
+      "js": ["background.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "description": "How to become a real Hatem",
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "128": "images/icon-128.png",
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png"
+  },
+  "manifest_version": 3,
+  "name": "Hatem Cena Demo",
+  "version": "1.2.0",
+  "web_accessible_resources": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "resources": ["cena.mp4"]
+    }
+  ]
+}
